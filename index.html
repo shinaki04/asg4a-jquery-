@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sweet Treats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #fff5f8;
+        background: url("https://tse2.mm.bing.net/th?id=OIP.xrycRg_iQTIiNTjPmf9LYQHaE7&pid=Api&P=0&h=220")
+          no-repeat center center;
+      }
+      .hero {
+        background: url("https://tse2.mm.bing.net/th?id=OIP.fwTAKMkLK_BrJ1YGFDJdvQHaEJ&pid=Api&P=0&h=220")
+          no-repeat center center;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: white;
+      }
+      .hero-text {
+        padding: 20px;
+        font-family: "Great Vibes", cursive;
+        font-size: 80px;
+        border-radius: 12px;
+        margin-bottom: 250px;
+        color: black;
+      }
+      .section-title {
+        text-align: center;
+        font-size: 28px;
+        color: #d87093;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: "Great Vibes", cursive;
+      }
+      .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+      }
+      .product-box {
+        width: 45%;
+        margin: 10px;
+        background: #ffe4ec;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .product-box img {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+      }
+      .product-box h3 {
+        margin: 10px 0 5px;
+        font-size: 20px;
+        color: #c04080;
+      }
+      .product-box p {
+        font-size: 14px;
+        color: #5c5c5c;
+      }
+      .footer {
+        background-color: #fcdde9;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+      .footer p {
+        margin: 5px 0;
+      }
+      .ui-navbar a {
+        color: #d87093 !important;
+      }
+      .ui-btn-custom {
+        background-color: #f8c8dc;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+      }
+      form label {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+      <div
+        data-role="header"
+        style="background-color: #f8c8dc; text-align: center"
+      >
+        <h1 style="font-family: 'Great Vibes', cursive; font-size: 32px">
+          Sweet Treats
+        </h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div role="main" class="ui-content">
+        <div class="hero">
+          <div class="hero-text">One Bakery. Endless Delights.</div>
+        </div>
+
+        <h2 class="section-title">Our Specialties</h2>
+
+        <div class="product-grid">
+          <div class="product-box">
+            <img
+              src="https://tse3.mm.bing.net/th?id=OIP.xIlxISLKm5oayX0Aty2llQHaE8&pid=Api&P=0&h=220"
+              alt="Macarons"
+            />
+            <h3>Macarons</h3>
+            <p>French almond cookies filled with cream</p>
+          </div>
+          <div class="product-box">
+            <img
+              src="https://tse1.mm.bing.net/th?id=OIP.YCeNJTgZ2YGOWoObhBrybgHaHa&pid=Api&P=0&h=220"
+              alt="Cupcakes"
+            />
+            <h3>Cupcakes</h3>
+            <p>Fluffy cupcakes with elegant pink toppings</p>
+          </div>
+          <div class="product-box">
+            <img
+              src="https://sugarspunrun.com/wp-content/uploads/2017/11/Meringues-cookie-recipe-1-of-1.jpg"
+              alt="Meringues"
+            />
+            <h3>Meringues</h3>
+            <p>Sweet and crunchy, perfect for parties</p>
+          </div>
+          <div class="product-box">
+            <img
+              src="https://tse3.mm.bing.net/th?id=OIP.P0oXRbybUbKnWQ_MP5ErkgHaLG&pid=Api&P=0&h=220"
+              alt="Strawberry Cakes"
+            />
+            <h3>Strawberry Cakes</h3>
+            <p>Fresh strawberries & whipped cream</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-role="footer" class="footer">
+        <p>Contact: sweet@treats.com | 123-456-7890</p>
+        <p>Follow us: Instagram | Facebook | Pinterest</p>
+      </div>
+    </div>
+
+    <!-- Menu Page -->
+    <div data-role="page" id="menu">
+      <div
+        data-role="header"
+        style="background-color: #f8c8dc; text-align: center"
+      >
+        <h1>Our Menu</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+          <li>
+            <h2>Macarons</h2>
+            <p>$2.00 each</p>
+          </li>
+          <li>
+            <h2>Cupcakes</h2>
+            <p>$3.00 each</p>
+          </li>
+          <li>
+            <h2>Meringues</h2>
+            <p>$1.50 each</p>
+          </li>
+          <li>
+            <h2>Strawberry Cakes</h2>
+            <p>$5.00 per slice</p>
+          </li>
+          <li>
+            <h2>Custom Orders</h2>
+            <p>Contact us for pricing</p>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="footer" class="footer">
+        <a href="#home" class="ui-btn ui-btn-custom ui-btn-inline"
+          >Back to Home</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
